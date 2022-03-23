@@ -21,7 +21,7 @@
         }
         h3.D1
         {
-            background-color: aliceblue;
+            background-color: rgb(11, 14, 17);
         }
         p::first-letter
         {
@@ -36,14 +36,44 @@
             color: aliceblue;
             size: 0ch;
         }
-        h3 :hover
-        {
-           color: rgb(205, 221, 205);
-           background-color: darkolivegreen; 
-        }
         h3
         {
             color: rgb(205, 221, 205);
+        }
+        a:visited
+        {
+            color: blanchedalmond;
+            text-decoration: none;
+        }
+        a:active
+        {
+            color: darkolivegreen;
+        }
+        a:link
+        {
+            color: lightgreen;
+            text-decoration: none;
+        }
+        a:hover
+        {
+color: deeppink;
+        }
+        .D5
+        {
+            color: cornsilk;
+            white-space: nowrap;
+            width: 50px;
+            border: 2px;
+            border-style: groove;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .D5:hover
+        {
+            overflow: visible;
+            width: 300px;
+            border: 250px;
+            border: 2px groove white;
         }
         </style>
 </head>
@@ -57,13 +87,19 @@
 <input type="submit" value="sign in">
         </fieldset>
     </form>
+    <header>
+        <h4 class="D5">Welcome to bookshelf</h4>
     <p style="text-align: center";>"<IMG src="ASSETS/43-432054_pile-of-books-png-download-transparent-background-books.png" height="100" width="100"></p>  <h1>BOOKSHELF</h1>
     <pre><h3 class="D1"><a href="https://www.google.com/search?q=popular+books&oq=popula&aqs=chrome.0.0i67j69i57j0i67l8.3637j0j7&sourceid=chrome&ie=UTF-8" target="_blank" title="popular">Popular books</a>     <a href="https://www.google.com/search?q=new+books&ei=ZHY4Yq3lNu2b4-EPupm4wAI&ved=0ahUKEwitp7TkoNf2AhXtzTgGHboMDigQ4dUDCA4&uact=5&oq=new+books&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAELEDEEMyBQgAEJECMgUIABCRAjIFCAAQkQIyBQgAEJECMgQIABBDMgoIABCxAxCDARBDMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgBOgwILhDIAxCwAxBDGAI6DwguENQCEMgDELADEEMYAjoICAAQsQMQgwE6DgguEIAEELEDEMcBENEDOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CAgAEIAEELEDOgQILhBDOg0ILhCxAxDHARDRAxBDOgsILhCABBCxAxCDAToKCC4QxwEQrwEQQzoHCC4Q1AIQQzoKCC4QsQMQ1AIQQzoLCC4QgAQQsQMQ1AI6DQguELEDEMcBEKMCEEM6CggAEIAEELEDEApKBAhBGABKBAhGGAFQjSBYpjtg0D5oA3ABeACAAa8BiAGRCpIBAzAuOZgBAKABAcgBE8ABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz" target="_blank" title="new books">New books</a>      <a href="file:///D:/Dlithe_DOTNET_FSD_march_may2022/frontend/genre%20list.html">Genre</a></h3></pre>
     <iframe src="https://openlibrary.org/" height="400px" width="500px"></iframe>
+    </header>
     <h3>FAMOUS AUTHORS</h3>
     <ol>
     <figure>
-   <li><img src="ASSETS/1455.jpg" height="300px" width="320px" alt="html"></li> 
+<li><img src="ASSETS/1455.jpg" height="300px" width="320px" alt="Ernest" usemap="#qwerty"></li>
+   <map name="qwerty">
+       <area shape="rect" coords="170,70,550,600" alt="Ernest" href="https://en.wikipedia.org/wiki/Ernest_Hemingway">
+   </map>
 <PRE>      
 <figcaption><p><b>Ernest Miller</b> Hemingway was an American novelist, 
 short-story writer, journalist, and sportsman.
@@ -74,17 +110,18 @@ lifestyle and his public image brought him
 admirationfrom later generations.</p></figcaption>
 </pre>
 </figure>
+<hr>
 <figure>
-<li><img src="ASSETS/JK.jpg" height="400px" width="300px" alt="html"></li> 
+<li><img src="ASSETS/JK.jpg" height="400px" width="300px" alt="JK"></li>
 <PRE>      
 <figcaption><p><b>Joanne Rowling</b> is a British author and philanthropist
 known by her pen name J. K. Rowling. She wrote
 a seven-volume children's fantasy series,
 Harry Potter, published from 1997 to 2007.</p></figcaption>
 </pre>
-</figure>
+</figure><hr>
 <figure>
-<li><img src="ASSETS/tagore.jpg" height="300px" width="400px" alt="html"></li> 
+<li><img src="ASSETS/tagore.jpg" height="300px" width="400px" alt="html" class="D3"></li>
 <PRE>      
 <figcaption><p><b>Rabindranath Tagore</b> FRAS was a Bengali polymath—poet, writer,
 playwright, composer, philosopher, social reformer
@@ -92,7 +129,13 @@ and painter. He reshaped Bengali literature and music
 as well as Indian art with Contextual Modernism in
 the late 19th and early 20th centuries.</p></figcaption>
 </pre>
-</figure>
+</figure><hr>
 </ol>
+<footer>
+<p>
+    <img src="ASSETS/43-432054_pile-of-books-png-download-transparent-background-books.png" height="50px" width="50px" style="float: left;">
+    This is a website with wide range of information on the books. Here you can find popular books, new books and some information on famous Authors. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate illum laboriosam omnis vero, repudiandae aspernatur ullam voluptates et facere ad suscipit labore quas, doloribus vel, commodi maiores eaque tenetur fugit.
+</p>
+</footer>
 </body>
 </html>
