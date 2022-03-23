@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body
+        {
+            background: #DAE2F8;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        label
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            color:honeydew;
+        }
+        h1.D1
+        {
+            text-shadow: 4px 4px 4px lightslategrey;
+            text-align: center;
+            border-style: double;
+            border-radius: 4px;
+        }
+        legend
+        {
+            opacity: 0.3;
+        }
+        fieldset
+        {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="D1">REGISTRATION FORM</h1>
+    <form action="" method="post" style="border-style: dashed; border-color:grey;">
+        <fieldset>
+            <legend>
+                Fill out the details
+            </legend>
+            <label>Name:</label><br>
+            <input type="text" name="Name" required><br>
+            <label>Father's Name:</label><br>
+            <input type="text" name="Name" required><br>
+            <label>Email ID:</label><br>
+            <input type="email" name="email"required><br>
+            <label>Password:</label><br>
+            <input type="password" name="password" required><br>
+            <label>Re-enter Password:</label><br>
+            <input type="password" name="password1"><br>
+            <label>Mobile No:</label><br>
+            <input type="tel" pattern="[0-9]{10}" required><br>
+            <label>DOB:</label><br>
+        <input type="date"> Select Date<br>
+            <label>Address:</label><br>
+            <textarea></textarea><br>
+            <label>Gender:</label>
+            <input type="radio" id="gender" name="gender" value="male">male
+            <input type="radio" id="gender" name="gender" value="female">female<br>
+            <label>Select your Income:</label>
+            <select name="Income">
+                <option>Below 50,000</option>
+                <option>50,000-1,00,000</option>
+                <option>1,00,000-2,00,000</option>
+                <option>2,00,000-5,00,000</option>
+            </select><br>
+            <label>Preferred mode:</label>
+            <input type="checkbox" id="select" value="online">Online
+            <input type="checkbox" id="select" value="offline">Offline
+            <hr>
+            <hr>
+            <p style="text-align: center;"><input type="submit" value="Register"></p>
+        </fieldset>
+    </form>
+</body>
+</html>
