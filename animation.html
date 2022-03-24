@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body
+        {
+            background: #6A9113;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #141517, #6A9113);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #141517, #6A9113); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        .abs
+        {
+            background-color: rgb(253, 253, 253);
+            border-style: dashed;
+            position:absolute;
+            height: 100px;
+            width: 100px;
+            top: 50px;
+            left: 50px;   
+        }
+        .rel
+        {
+            background-color: #F1F2B5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #135058, #F1F2B5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #135058, #F1F2B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            border-style: ridge;
+            position: relative;
+            height: 200px;
+            width: 200px;
+        }
+        h1
+        {
+            text-align: center;
+            align-self: center;
+            padding: 3px;
+            font-style: italic;
+            border: 2px;
+            height: 50px;
+            width:200px;
+            border-style: double;
+            background-color: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: #42275a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            transition: width 3s, transform 3s;
+        }
+        h1:hover
+        {
+            width: 400px;
+            color: rgb(2, 2, 2);
+            transform: rotate(360deg);
+        }
+        @keyframes del1
+        {
+          0%{left: 50px;top:50px;}
+          50%{;left: 100px;top:75px;}
+          100%{left: 200px;top:100px;}
+        }
+        @keyframes del2
+        {
+          0%{left: 50px;top:50px;}
+          50%{;left: 100px;top:75px;}
+          100%{left: 200px;top:100px;}
+        }
+        @keyframes del3
+        {
+          0%{left: 50px;top:50px;}
+          50%{;left: 100px;top:75px;}
+          100%{left: 200px;top:100px;}
+        }
+        div.del1
+        {
+            position:relative;
+            animation-name: del1;
+            animation-duration: 3s;
+            animation-delay: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        div.del2
+        {
+            position:relative;
+            animation-name: del2;
+            animation-duration: 3s;
+            animation-delay: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        div.del3
+        {
+            position:relative;
+            animation-name: del3;
+            animation-duration: 3s;
+            animation-delay: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+<body>
+    <h1>SPINNERS</h1>
+    <div class="rel">
+        <p class="abs">Hello</p>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <div class="del1">
+        <img src="assets/spinner.png" alt="top" height="125px" width="100px" style="float: left">
+    </div>
+    <div class="del2">
+        <img src="assets/spinner.png" alt="top" height="125px" width="100px" style="float: left">
+    </div>
+    <div class="del3">
+        <img src="assets/spinner.png" alt="top" height="125px" width="100px">
+    </div>
+</body>
+</html>
