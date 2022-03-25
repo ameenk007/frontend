@@ -63,6 +63,21 @@
     <br>
     <br>
     <br>
+    <p id="username"></p>
+    <p id="emp"></p>
+    <p id="emp1"></p>
+    <script>
+var name="Peterparker";
+const empdetails=
+{
+    empid: 19,
+    empname: "Parker",
+    empdesignation: "Full stack Developer"
+};
+document.getElementById("username").innerHTML=name;
+document.getElementById("emp").innerHTML="Emplyee "+ empdetails.empid + "'s name is " + empdetails.empname;
+document.getElementById("emp1").innerHTML=empdetails.empname + " is in " +empdetails.empdesignation + " department";
+</script>
     <input type="submit" onclick="details()" value="details">
     <script type="text/javascript" src="DatatypeextJS.js"></script>
 </body>
