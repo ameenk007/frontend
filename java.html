@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <style>
+        p
+        {
+            font-size: x-large;
+            font-weight: bold;
+        }
         body
         {
             background: #6D6027;  /* fallback for old browsers */
@@ -67,15 +72,15 @@
     <p id="emp"></p>
     <p id="emp1"></p>
     <script>
-var name="Peterparker";
+var name="Peter Parker";
 const empdetails=
 {
     empid: 19,
-    empname: "Parker",
-    empdesignation: "Full stack Developer"
+    empname: "Peter",
+    empdesignation: "Full stack"
 };
 document.getElementById("username").innerHTML=name;
-document.getElementById("emp").innerHTML="Emplyee "+ empdetails.empid + "'s name is " + empdetails.empname;
+document.getElementById("emp").innerHTML="Employee "+ empdetails.empid + "'s name is " + empdetails.empname;
 document.getElementById("emp1").innerHTML=empdetails.empname + " is in " +empdetails.empdesignation + " department";
 </script>
     <input type="submit" onclick="details()" value="details">

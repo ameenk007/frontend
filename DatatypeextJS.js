@@ -14,5 +14,5 @@ function details()
     document.write("Height: "+ h +"<br>");
     document.write("Differently abled: "+ D +"<br>");
     document.write("Income: " +income+"<br>");
-    document.write("Skills: " + k[0]+k[1]+ k[2] + "<br>");
+    document.write("Skills: " + k + "<br>");
  }
