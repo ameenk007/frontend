@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <style>
+        body
+        {
+            background-image: url("ASSETS/court.jpg");
+        }
+        *
+        {
+            color: rgb(194, 207, 77);
+        }
+    </style>
+</head>
+<body>
+    <h1>LIGUE
+    </h1>
+    <script>
+        var Teams=["Real Madrid", "PSG", "Chelsea", "Manchester United", "Manchester City"];
+        document.write(Teams+"<br>"+"<hr>")
+        document.write("Total no. of teams: "+Teams.length+"<br>");
+        Teams.unshift("Everton");
+        document.write("Total no. of teams after qualification: "+Teams.push("Barcelona","Liverpool")+"<br>"+"<hr>");
+        document.write("Final Team Names: "+Teams+"<br>"+"<hr>");
+        var values=["6-Barcelona", "2-PSG","1-Real Madrid","4-Manchester United", "7-Liverpool","0-Everton", "3-Chelsea","5-Manchester City"];
+        document.write(values.sort()+"<br>"+"<hr>");
+        var last=Teams.pop();
+        var first=Teams.shift();
+        document.write("Eliminated teams: ")
+        document.write(last+", ");
+        document.write(first+"<br>")
+        document.write("Teams left after elimination: ")
+        document.write(Teams+"<br>"+"<hr>");
+        Teams.splice(1,1);
+        Teams.splice(2,1);
+        document.write("Teams through Semi-finals: " +Teams+"<br>"+"<hr>");
+        Teams.splice(1,1);
+        Teams.splice(1,1);
+        document.write("Teams through finals: ");
+        var finalist= Teams.concat(Teams)
+        document.write(Teams+"<br>")
+        document.write("Score: ")
+        var iterateindex =Teams.entries();
+        for(var item of iterateindex)
+        {
+            document.write("-------"+item+"<br>");
+        }
+        document.write("<hr>")
+        var teamname=["Barcelona","Real Madrid"];
+        var result=teamname.filter(teamname=>teamname.length==9);
+        document.write("<h1>"+ "WINNER: " + result+"<br>");
+        
+    </script>
+</body>
+</html>
