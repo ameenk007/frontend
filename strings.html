@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    <style>
+        body
+        {
+            background-image:url("ASSETS/BGIMG4.webp");
+        }
+        *
+        {
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trainee details</h1>
+    <p id="T"></p>
+    <p id="T1"></p>
+    <p id="T2"></p>
+    <p id="T3"></p>
+    <p id="T4"></p>
+    <script>
+        var str1="Trainer ";
+        var str2="Name: ";
+        var str3="Peter";
+        var str4= "Peter is the trainer"
+        document.getElementById("T").innerHTML= str1+str2+str3+"<br>";
+        var result= str4.indexOf("trainer");
+        document.write("t of trainer is in "+result+ "th place of the sentence \"Peter is the trainer\"" +"<br>"+"<hr>");
+        var str5="     Antony    ";
+        var str6="Jacob";
+        var str7="    Luis   ";
+        var str8="Roy";
+        var str9="   Anil    ";
+        var str10="Kumar";
+        var str11= "Trainee Names:"
+        document.write(str11.toUpperCase()+"<br>")
+        document.write(str5.concat(str6) +"<br>")
+        document.write(str7.concat(str8) +"<br>")
+        document.write(str9.concat(str10) +"<br>")
+        document.write("After trimming white spaces:"+"<br>")
+        var str16=str5.trim();
+        document.write(str16+"<br>")
+        var str17=str7.trim();
+        document.write(str17+"<br>")
+        var str18=str9.trim();
+        document.write(str18+"<br>"+"<hr>")
+        var str13= "nick names:";
+        document.write(str13.toUpperCase()+"<br>")
+        var str12=str16.slice(0,4);
+        document.write(str12+"<br>")
+        var str14=str17.slice(0,3);
+        document.write(str14+"<br>")
+        var str15=str18.slice(0,3);
+        document.write(str15+"<br>"+"<hr>")
+        var names= "Antony Luis Anil";
+        document.write(names.split(" ") +" are the trainees"+"<br>"+"<hr>")
+        for (var i=0; i<16; i++)
+        document.write(names[i]+"<br>")
+        for(var a of names)
+            document.write(a);
+    </script>
+</body>
+</html>
