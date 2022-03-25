@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body
+        {
+            background: #6D6027;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #D3CBB8, #6D6027);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #D3CBB8, #6D6027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        legend
+        {
+            opacity: 0.2;
+        }
+        fieldset
+        {
+            color: darkslategrey;
+            border-color: #6D6027;
+        }
+    </style>
+    <script>
+        function message1()
+        {
+            alert("Please enter the Username");
+        }
+        function message2()
+        {
+            alert("Please enter the email ID");
+        }
+        function message3()
+        {
+            alert("Please enter the password");
+        }
+        function message4()
+        {
+            alert("Please re-enter the password");
+        }
+        </script>
+       
+</head>
+<body>
+    <h1 style="text-align: center;color: darkslategrey; text-shadow: 2px 2px 4px black;">REGISTER</h1> 
+    <form action="" method="post">
+        <fieldset>
+<legend>
+    Fill the details
+</legend>
+<label>Username:</label><br>
+<input type="text" onclick="message1()" name="username"><br>
+<label>Email ID:</label><br>
+<input type="email" onclick="message2()" name="email"><br>
+<label>Password:</label><br>
+<input type="password" onclick="message3()" name="password"><br>
+<label> Re-enter Password:</label><br>
+<input type="password" onclick="message4()" name="password"><br>
+<p style="text-align: center;"><input type="submit" value="create"></p><br>
+</fieldset>
+    </form>
+    <br>
+    <br>
+    <br>
+    <input type="submit" onclick="details()" value="details">
+    <script type="text/javascript" src="DatatypeextJS.js"></script>
+</body>
+</html>
