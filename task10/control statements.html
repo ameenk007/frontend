@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+        var num1=10;
+        var num2=10;
+        var num3=20;
+        if(num1==num2&&num2==num3)
+        {
+            document.write("all three are equal")
+        }
+        else if(num1==num2)
+        {
+            document.write("num1 and num2 are only equal")
+        }
+        else if(num1==num3)
+        {
+            document.write("num1 and num3 are only equal")
+        }
+        else if(num2==num3)
+        {
+            document.write("num2 and num3 are only equal")
+        }
+        else
+        {
+            document.write("none of them are equal")
+        }
+        document.write("<br>"+"<hr>")
+        var operation="/"
+        switch(operation)
+        {
+            case "+": document.write("you have chosen to perform an addition operation")
+            break;
+            case "-":document.write("you have chosen to perform a subtraction operation")
+            break;
+            case "/": document.write("you have chosen to perform a division operation")
+            break;
+            case "*": document.write("you have chosen to perform a multiplication operation")
+            break;
+            default: document.write("Invalid Operand");
+            break;
+        }
+        document.write("<br>"+"<hr>")
+        var n1=1, n2=2,sum=n1+n2;
+for(var i=0; i<7; i++)
+{
+    n1+=i;
+    n2+=i;
+    sum=n1+n2;
+    document.write(sum + "<br>");
+}
+document.write("<br>"+"<hr>")
+var j=0;
+while(j<7)
+{
+    document.write(j+"<br>")
+    j++;
+}
+document.write("<br>"+"<hr>")
+var k=10;
+do
+{
+    document.write(k+"<br>")
+    k++;
+}while(k<10);
+document.write("<br>"+"<hr>")
+}
+    </script> 
+    <button onclick="cube(3,3,3)">click</button>
+    <button onclick="submit()">submit</button>
+    <button onclick="askname()">askname</button>
+    <script>
+        {
+    function cube(n1,n2,n3)
+    {
+        document.write(n1*n2*n3)
+    }
+    function submit()
+    {
+        var msg=confirm("do you want to leave the page?")
+        if(msg)
+        {
+            alert("your session is over")
+            window.location="https://www.google.com"
+        }
+        else
+        {
+            alert("You can continue")
+        }
+    }
+    function askname()
+    {
+        var name=prompt("Please enter your name");
+        alert("Your name is "+ name);
+    }
+        }
+</script>
+</body>
+</html>
