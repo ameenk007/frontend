@@ -1,0 +1,98 @@
+body
+{
+    background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}    
+h5.logo
+{
+    color: rgb(77, 145, 204);
+}
+label.book
+{
+    font-weight: bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+p.submit
+{
+    text-align: right;
+    opacity: 0.8;
+    border-style: none;
+}
+label
+{
+    opacity: 0.8;
+}
+input :hover
+{
+    color: rgb(216, 41, 41);
+}
+a:link
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    font-size: x-large;
+}
+a:hover
+{
+  color: black;
+}
+pre.link
+{
+    text-align: right;
+}
+img
+{
+    border-radius: 5px;
+    border-style: hidden;
+}
+fieldset
+{
+    border-radius: 10px;
+}
+input.inp
+{
+    border-style: none;
+    height: 25px;
+    width: 200px;
+    opacity: 0.8;
+}
+input.sub
+{
+    border-style: none;
+    height: 25px;
+    width: 70px;
+    opacity: 0.6;
+}
+input.form
+{
+width: 30px;
+border-style: none;
+opacity: 0.8;
+height: 25px;
+}
+input.submit
+{
+    border-style: none;
+    text-align: center;
+    height: 25px;
+    width: 150px;
+    opacity: 0.8;
+}
+header
+{
+    border-style:none ;
+    position: sticky;
+    top: 0;
+    height: 120px;
+    background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+label
+{
+    opacity: 0.6;
+}
